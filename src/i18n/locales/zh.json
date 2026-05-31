@@ -59,6 +59,7 @@
     "storeProductPrice": "分店商品价格",
     "pricingStrategies": "自动价格策略",
     "promotions": "促销管理",
+    "advertisements": "广告素材",
     "cashRegisterUsers": "收银用户条码",
     "scheduleAttendance": "排班考勤",
     "deviceRegistration": "设备注册",
@@ -1304,6 +1305,81 @@
     "partialImportSuccess": "部分导入成功",
     "partialImportSuccessTitle": "部分导入成功",
     "searchProduct": "搜索商品"
+  },
+  "advertisements": {
+    "title": "广告素材管理",
+    "confirmDelete": "确认删除该广告素材？",
+    "actions": {
+      "create": "新建广告",
+      "upload": "上传素材"
+    },
+    "filters": {
+      "title": "标题",
+      "titlePlaceholder": "搜索标题",
+      "store": "分店",
+      "mediaType": "媒体类型",
+      "status": "状态"
+    },
+    "columns": {
+      "title": "标题",
+      "preview": "预览",
+      "mediaType": "媒体类型",
+      "isEnabled": "启用",
+      "effectiveRange": "生效时间",
+      "stores": "分店",
+      "sortOrder": "排序"
+    },
+    "mediaTypes": {
+      "image": "图片",
+      "video": "视频"
+    },
+    "status": {
+      "enabled": "启用",
+      "disabled": "停用"
+    },
+    "editor": {
+      "createTitle": "新建广告",
+      "editTitle": "编辑广告"
+    },
+    "fields": {
+      "title": "标题",
+      "description": "说明",
+      "mediaType": "媒体类型",
+      "sortOrder": "排序",
+      "isEnabled": "启用",
+      "asset": "广告素材",
+      "objectKey": "对象键",
+      "contentType": "文件类型",
+      "mediaUrl": "素材地址",
+      "originalFileName": "原始文件名",
+      "fileSize": "文件大小",
+      "thumbnailUrl": "缩略图地址",
+      "effectiveRange": "生效时间",
+      "scopeType": "分店范围",
+      "stores": "投放分店"
+    },
+    "scope": {
+      "allStores": "全部分店",
+      "selectedStores": "指定分店",
+      "allStoresHint": "未指定分店时，表示投放到全部分店",
+      "selectedStoresHint": "请选择需要投放的分店"
+    },
+    "validation": {
+      "title": "请输入广告标题",
+      "mediaUrl": "请先上传广告素材",
+      "effectiveRange": "请选择生效时间",
+      "stores": "请选择至少一个投放分店",
+      "fileType": "仅支持图片或视频素材"
+    },
+    "empty": {
+      "noAsset": "暂未上传素材"
+    },
+    "messages": {
+      "loadDetailFailed": "加载广告详情失败",
+      "toggleSuccess": "广告状态已更新",
+      "uploadSuccess": "素材上传成功",
+      "uploadFailed": "素材上传失败"
+    }
   },
   "posAdmin": {
     "suppliers": {

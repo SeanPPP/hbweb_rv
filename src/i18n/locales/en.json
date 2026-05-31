@@ -59,6 +59,7 @@
     "storeProductPrice": "Store Product Prices",
     "pricingStrategies": "Pricing Strategies",
     "promotions": "Promotions",
+    "advertisements": "Advertisements",
     "cashRegisterUsers": "Cashier Barcodes",
     "scheduleAttendance": "Schedule Attendance",
     "deviceRegistration": "Device Registration",
@@ -1304,6 +1305,81 @@
     "partialImportSuccess": "Partially imported",
     "partialImportSuccessTitle": "Partial Import Success",
     "searchProduct": "Search product"
+  },
+  "advertisements": {
+    "title": "Advertisement Materials",
+    "confirmDelete": "Confirm delete this advertisement?",
+    "actions": {
+      "create": "New Advertisement",
+      "upload": "Upload Asset"
+    },
+    "filters": {
+      "title": "Title",
+      "titlePlaceholder": "Search title",
+      "store": "Store",
+      "mediaType": "Media Type",
+      "status": "Status"
+    },
+    "columns": {
+      "title": "Title",
+      "preview": "Preview",
+      "mediaType": "Media Type",
+      "isEnabled": "Enabled",
+      "effectiveRange": "Effective Time",
+      "stores": "Stores",
+      "sortOrder": "Sort"
+    },
+    "mediaTypes": {
+      "image": "Image",
+      "video": "Video"
+    },
+    "status": {
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "editor": {
+      "createTitle": "New Advertisement",
+      "editTitle": "Edit Advertisement"
+    },
+    "fields": {
+      "title": "Title",
+      "description": "Description",
+      "mediaType": "Media Type",
+      "sortOrder": "Sort",
+      "isEnabled": "Enabled",
+      "asset": "Asset",
+      "objectKey": "Object Key",
+      "contentType": "Content Type",
+      "mediaUrl": "Media URL",
+      "originalFileName": "Original File",
+      "fileSize": "File Size",
+      "thumbnailUrl": "Thumbnail URL",
+      "effectiveRange": "Effective Time",
+      "scopeType": "Store Scope",
+      "stores": "Store Scope"
+    },
+    "scope": {
+      "allStores": "All Stores",
+      "selectedStores": "Selected Stores",
+      "allStoresHint": "Leaving the store list empty applies the asset to all stores",
+      "selectedStoresHint": "Select the stores that should receive this asset"
+    },
+    "validation": {
+      "title": "Please enter a title",
+      "mediaUrl": "Please upload an advertisement asset",
+      "effectiveRange": "Please select an effective time range",
+      "stores": "Please select at least one store",
+      "fileType": "Only image and video assets are supported"
+    },
+    "empty": {
+      "noAsset": "No asset uploaded yet"
+    },
+    "messages": {
+      "loadDetailFailed": "Failed to load advertisement detail",
+      "toggleSuccess": "Advertisement status updated",
+      "uploadSuccess": "Asset uploaded",
+      "uploadFailed": "Asset upload failed"
+    }
   },
   "posAdmin": {
     "suppliers": {

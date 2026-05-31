@@ -1,0 +1,30 @@
+{
+  "updatedAt": "2026-05-30",
+  "project": "HBPOS 多端项目",
+  "languagePreference": "中文",
+  "gitCommitMessagePreference": "中文",
+  "notes": [
+    "与用户交流使用中文。",
+    "所有代码注释使用中文，代码关键位置添加注释。",
+    "代码结构搜索优先使用 CodeGraph。",
+    "执行完成前需要验证结果。"
+  ],
+  "directories": {
+    "web": {
+      "path": "D:\\DevRepos\\react-vite-admin-phase1",
+      "description": "Web 端后台管理项目"
+    },
+    "mobile": {
+      "path": "D:\\DevRepos\\HbwebExpo",
+      "description": "移动端目录"
+    },
+    "adminBackend": {
+      "path": "D:\\DevRepos\\HBweb-worktrees\\Backend\\publish-master",
+      "description": "管理后端"
+    },
+    "posBackendAndWpf": {
+      "path": "D:\\DevRepos\\hbpos_win",
+      "description": "收银后端 + WPF 收银端"
+    }
+  }
+}

@@ -93,6 +93,10 @@ export const P = {
     SettingsEdit: 'Attendance.Settings.Edit',
     AdminView: 'Attendance.Admin.View',
   },
+  Advertisements: {
+    View: 'Advertisements.View',
+    Edit: 'Advertisements.Edit',
+  },
 } as const
 
 /**
