@@ -9,6 +9,7 @@ import type {
   AdvertisementUploadSignatureResponseDto,
   AdvertisementUpsertDto,
 } from '../types/advertisement'
+import { reportExternalFetchError } from '../utils/centerLogClient'
 import request, { unwrapApiData } from '../utils/request'
 
 const API_BASE = '/api/react/v1/advertisements'
@@ -166,14 +167,33 @@ export async function uploadAdvertisementAsset(file: File): Promise<Advertisemen
     contentType: file.type || 'application/octet-stream',
     fileSize: file.size,
   })
+  const uploadUrl = signature.uploadUrl || signature.url
 
-  const response = await fetch(signature.uploadUrl || signature.url, {
+  const response = await fetch(uploadUrl, {
     method: 'PUT',
     headers: signature.headers,
     body: file,
+  }).catch((error) => {
+    reportExternalFetchError({
+      url: uploadUrl,
+      method: 'PUT',
+      error,
+    })
+    throw error
   })
   if (!response.ok) {
-    throw new Error(`Upload failed (${response.status})`)
+    const uploadError = new Error(`Upload failed: ${response.status}`)
+    // 上传失败日志必须旁路发送，不能等待、更不能影响原始上传报错。
+    reportExternalFetchError({
+      url: uploadUrl,
+      method: 'PUT',
+      statusCode: response.status,
+      error: uploadError,
+      responsePayload: {
+        message: response.statusText || `HTTP ${response.status}`,
+      },
+    })
+    throw uploadError
   }
 
   return {
